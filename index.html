@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Holistic Cell Wellbeing</title>
+  <meta name="description" content="Personalized holistic care in Perambur, Chennai — Chakra Healing, Reflexology, Acupuncture, and wellness consults." />
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <style>
+    /* Smooth accordion transitions */
+    .faq-body {
+      transition: max-height 0.3s ease;
+    }
+    /* Hide scrollbars in mobile drawer for aesthetics */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+  </style>
+</head>
+<body class="min-h-screen w-full bg-white text-slate-900 scroll-smooth">
+  <!-- Top Bar -->
+  <header class="sticky top-0 z-50 border-b border-slate-200 bg-white/85 backdrop-blur supports-[backdrop-filter]:bg-white/70">
+    <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
+      <a href="#home" class="flex items-center gap-2 font-black tracking-tight">
+        <span class="text-xl sm:text-2xl">Holistic <span class="text-emerald-600">Cell</span> Wellbeing</span>
+      </a>
+
+      <nav class="hidden items-center gap-6 text-sm font-medium md:flex">
+        <a href="#home" class="hover:text-emerald-700 transition-colors">Home</a>
+        <a href="#services" class="hover:text-emerald-700 transition-colors">Services</a>
+        <a href="#results" class="hover:text-emerald-700 transition-colors">Results</a>
+        <a href="#conditions" class="hover:text-emerald-700 transition-colors">Conditions</a>
+        <a href="#about" class="hover:text-emerald-700 transition-colors">About</a>
+        <a href="#faqs" class="hover:text-emerald-700 transition-colors">FAQs</a>
+        <a href="#contact" class="hover:text-emerald-700 transition-colors">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a href="tel:+919840055744" class="hidden rounded-xl bg-emerald-600 px-3 py-2 text-xs font-semibold text-white shadow-sm hover:bg-emerald-700 sm:inline">
+          Call: 098400 55744
+        </a>
+        <button id="openDrawerBtn" aria-label="Open menu" class="inline md:hidden">
+          <i data-lucide="menu" class="h-6 w-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer -->
+    <div id="drawerOverlay" class="hidden fixed inset-0 z-[60] md:hidden">
+      <div class="absolute inset-0 bg-black/30" id="closeDrawerOverlay"></div>
+      <div class="ml-auto h-full w-80 max-w-[85%] bg-white shadow-xl flex flex-col">
+        <div class="flex items-center justify-between border-b px-4 py-3">
+          <span class="font-bold">Menu</span>
+          <button aria-label="Close menu" id="closeDrawerBtn"><i data-lucide="x" class="h-6 w-6"></i></button>
+        </div>
+        <div class="flex-1 overflow-y-auto p-4 no-scrollbar">
+          <a href="#home" class="rounded-lg px-3 py-3 text-base hover:bg-emerald-50 block mobile-close">Home</a>
+          <a href="#services" class="rounded-lg px-3 py-3 text-base hover:bg-emerald-50 block mobile-close">Services</a>
+          <a href="#results" class="rounded-lg px-3 py-3 text-base hover:bg-emerald-50 block mobile-close">Results</a>
+          <a href="#conditions" class="rounded-lg px-3 py-3 text-base hover:bg-emerald-50 block mobile-close">Conditions</a>
+          <a href="#about" class="rounded-lg px-3 py-3 text-base hover:bg-emerald-50 block mobile-close">About</a>
+          <a href="#faqs" class="rounded-lg px-3 py-3 text-base hover:bg-emerald-50 block mobile-close">FAQs</a>
+          <a href="#contact" class="rounded-lg px-3 py-3 text-base hover:bg-emerald-50 block mobile-close">Contact</a>
+
+          <div class="mt-3 flex gap-2">
+            <a href="tel:+919840055744" class="flex-1 rounded-xl bg-emerald-600 px-3 py-2 text-sm font-semibold text-white hover:bg-emerald-700">
+              <div class="flex items-center justify-center gap-2"><i data-lucide="phone" class="h-4 w-4"></i> Call</div>
+            </a>
+            <a href="#contact" class="flex-1 rounded-xl border border-emerald-600 px-3 py-2 text-sm font-semibold text-emerald-700 hover:bg-emerald-50">
+              <div class="flex items-center justify-center gap-2"><i data-lucide="calendar-days" class="h-4 w-4"></i> Book</div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="home" class="relative overflow-hidden">
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-emerald-50 via-white to-white"></div>
+    <div class="mx-auto grid max-w-7xl items-center gap-8 px-4 py-10 sm:py-14 md:grid-cols-2 lg:gap-12 sm:px-6 lg:px-8">
+      <div>
+        <div class="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-1 text-xs font-medium text-emerald-700">
+          <i data-lucide="shield-check" class="h-4 w-4"></i> Evidence-informed holistic care
+        </div>
+        <h1 class="mt-3 text-3xl font-extrabold leading-tight sm:text-4xl lg:text-5xl">
+         Rebalance Your Seven Chakras to Improve Focus, Boost Emotional Strength, and Awaken Spiritual Growth
+        </h1>
+        <p class="mt-3 text-base text-slate-700 sm:text-lg">
+          Personalized sessions combining Chakra Healing, Reflexology, and Acupuncture with simple daily practices. Most clients feel lighter, calmer, and more centered after the first session.
+        </p>
+        <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+          <a href="#services" class="w-full rounded-2xl bg-emerald-600 px-5 py-3 text-center font-semibold text-white shadow hover:bg-emerald-700 sm:w-auto">Explore Services</a>
+          <a href="#contact" class="w-full rounded-2xl border border-slate-300 px-5 py-3 text-center font-semibold text-slate-800 hover:bg-slate-50 sm:w-auto">Book a Session</a>
+        </div>
+        <div class="mt-6 text-sm text-slate-600">
+          <p class="font-semibold">Clinic Address</p>
+          <p id="clinicAddress">Market and Apollo Pharmacy, 87/35, Vadivelu Mudali St, near Vellaiyan Vegetables, Kakkanji Colony, Chinnaiyan Colony, Perambur, Chennai, Tamil Nadu 600011</p>
+        </div>
+        <div class="mt-5 grid grid-cols-3 gap-3 text-center sm:max-w-md">
+          <div class="rounded-2xl border bg-white p-3 shadow-sm">
+            <div class="text-lg font-extrabold text-slate-900">8+</div>
+            <div class="text-xs text-slate-600">years exp.</div>
+          </div>
+          <div class="rounded-2xl border bg-white p-3 shadow-sm">
+            <div class="text-lg font-extrabold text-slate-900">3k+</div>
+            <div class="text-xs text-slate-600">sessions</div>
+          </div>
+          <div class="rounded-2xl border bg-white p-3 shadow-sm">
+            <div class="text-lg font-extrabold text-slate-900">4.8/5</div>
+            <div class="text-xs text-slate-600">average rating</div>
+          </div>
+        </div>
+      </div>
+      <div class="relative">
+        <div class="aspect-[4/3] overflow-hidden rounded-3xl border bg-white shadow-lg">
+          <img
+            src="/images/hero-clinic.webp"
+            alt="Calming therapy room at Holistic Cell Wellbeing"
+            loading="eager"
+            class="h-full w-full object-cover"
+          />
+        </div>
+        <div class="pointer-events-none absolute -bottom-4 -left-4 hidden rounded-2xl bg-white/80 p-3 shadow backdrop-blur md:block">
+          <div class="flex items-center gap-2 text-sm"><i data-lucide="star" class="h-4 w-4"></i> Client-loved care</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust badges -->
+  <section class="border-y bg-slate-50">
+    <div class="mx-auto grid max-w-7xl gap-4 px-4 py-6 sm:grid-cols-2 lg:grid-cols-4 sm:px-6 lg:px-8">
+      <div class="rounded-2xl border bg-white p-4 shadow-sm">
+        <p class="text-sm font-semibold text-slate-800">AYUSH Certified Yoga Teacher</p>
+      </div>
+      <div class="rounded-2xl border bg-white p-4 shadow-sm">
+        <p class="text-sm font-semibold text-slate-800">Foot Reflexology Specialist</p>
+      </div>
+      <div class="rounded-2xl border bg-white p-4 shadow-sm">
+        <p class="text-sm font-semibold text-slate-800">Acupuncturist</p>
+      </div>
+      <div class="rounded-2xl border bg-white p-4 shadow-sm">
+        <p class="text-sm font-semibold text-slate-800">Holistic Health Consultant</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+    <div class="max-w-3xl">
+      <h2 class="text-2xl font-extrabold sm:text-3xl">Services</h2>
+      <p class="mt-2 text-slate-600">Designed after a short consultation. Clear steps, gentle techniques, and measurable progress.</p>
+    </div>
+
+    <div class="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Service 1 -->
+      <article class="group overflow-hidden rounded-3xl border bg-white shadow-sm transition hover:shadow-md">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="/images/chakra-healing.webp" alt="Aura & Chakra Healing" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" />
+          <div class="absolute left-3 top-3 inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-xs font-medium shadow backdrop-blur">
+            <i data-lucide="sparkles" class="h-4 w-4"></i><span>Aura & Chakra Healing</span>
+          </div>
+        </div>
+        <div class="p-5">
+          <p class="text-sm text-slate-700">Energy scan, balancing, breathwork, and crystal support for clarity and calm.</p>
+          <ul class="mt-3 grid list-disc gap-1 pl-5 text-sm text-slate-700">
+            <li>7-chakra alignment</li>
+            <li>Guided meditation</li>
+            <li>Essential oils support</li>
+          </ul>
+        </div>
+      </article>
+      <!-- Service 2 -->
+      <article class="group overflow-hidden rounded-3xl border bg-white shadow-sm transition hover:shadow-md">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="/images/reflexology.webp" alt="Foot Reflexology" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" />
+          <div class="absolute left-3 top-3 inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-xs font-medium shadow backdrop-blur">
+            <i data-lucide="footprints" class="h-4 w-4"></i><span>Foot Reflexology</span>
+          </div>
+        </div>
+        <div class="p-5">
+          <p class="text-sm text-slate-700">Targeted pressure points to relieve stress, improve sleep and circulation.</p>
+          <ul class="mt-3 grid list-disc gap-1 pl-5 text-sm text-slate-700">
+            <li>Organ point mapping</li>
+            <li>Stress & fatigue relief</li>
+            <li>Better sleep quality</li>
+          </ul>
+        </div>
+      </article>
+      <!-- Service 3 -->
+      <article class="group overflow-hidden rounded-3xl border bg-white shadow-sm transition hover:shadow-md">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="/images/acupuncture.webp" alt="Acupuncture" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" />
+          <div class="absolute left-3 top-3 inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-xs font-medium shadow backdrop-blur">
+            <i data-lucide="activity" class="h-4 w-4"></i><span>Acupuncture</span>
+          </div>
+        </div>
+        <div class="p-5">
+          <p class="text-sm text-slate-700">Gentle, drug-free pain management and support for hormonal & digestive balance.</p>
+          <ul class="mt-3 grid list-disc gap-1 pl-5 text-sm text-slate-700">
+            <li>Fine sterile needles</li>
+            <li>Micro-systems techniques</li>
+            <li>Pain & mobility support</li>
+          </ul>
+        </div>
+      </article>
+      <!-- Service 4 -->
+      <article class="group overflow-hidden rounded-3xl border bg-white shadow-sm transition hover:shadow-md">
+        <div class="relative aspect-[4/3] overflow-hidden">
+          <img src="/images/consultation.webp" alt="Holistic Health Consult" loading="lazy" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.02]" />
+          <div class="absolute left-3 top-3 inline-flex items-center gap-2 rounded-full bg-white/90 px-3 py-1 text-xs font-medium shadow backdrop-blur">
+            <i data-lucide="heart-pulse" class="h-4 w-4"></i><span>Holistic Health Consult</span>
+          </div>
+        </div>
+        <div class="p-5">
+          <p class="text-sm text-slate-700">Root-cause assessment with lifestyle & nutrition guidance you can sustain.</p>
+          <ul class="mt-3 grid list-disc gap-1 pl-5 text-sm text-slate-700">
+            <li>History & goals review</li>
+            <li>Simple daily practices</li>
+            <li>Progress tracking</li>
+          </ul>
+        </div>
+      </article>
+    </div>
+
+    <!-- Packages -->
+    <div class="mt-12 rounded-3xl border bg-emerald-50 p-6 shadow-sm">
+      <h3 class="text-lg font-bold">Starter Wellness Packages</h3>
+      <div class="mt-4 grid gap-4 md:grid-cols-3">
+        <div class="rounded-2xl border bg-white p-5 shadow-sm">
+          <div class="flex items-center justify-between"><p class="font-semibold">Discovery</p><span class="text-sm text-emerald-700">₹1,999</span></div>
+          <p class="mt-2 text-sm text-slate-600">1 consultation + 1 therapy</p>
+          <a href="#contact" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-700 hover:underline">Book now <i data-lucide="chevron-right" class="h-4 w-4"></i></a>
+        </div>
+        <div class="rounded-2xl border bg-white p-5 shadow-sm">
+          <div class="flex items-center justify-between"><p class="font-semibold">Balance</p><span class="text-sm text-emerald-700">₹4,999</span></div>
+          <p class="mt-2 text-sm text-slate-600">3 sessions program</p>
+          <a href="#contact" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-700 hover:underline">Book now <i data-lucide="chevron-right" class="h-4 w-4"></i></a>
+        </div>
+        <div class="rounded-2xl border bg-white p-5 shadow-sm">
+          <div class="flex items-center justify-between"><p class="font-semibold">Deep Care</p><span class="text-sm text-emerald-700">₹8,999</span></div>
+          <p class="mt-2 text-sm text-slate-600">6 sessions program</p>
+          <a href="#contact" class="mt-4 inline-flex items-center gap-2 text-sm font-semibold text-emerald-700 hover:underline">Book now <i data-lucide="chevron-right" class="h-4 w-4"></i></a>
+        </div>
+      </div>
+      <p class="mt-3 text-xs text-slate-500">Pricing indicative. Final plan & fee after consultation.</p>
+    </div>
+  </section>
+
+  <!-- Results -->
+  <section id="results" class="bg-white">
+    <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+      <div class="grid items-start gap-10 md:grid-cols-2">
+        <div>
+          <h2 class="text-2xl font-extrabold sm:text-3xl">Feel the difference from session one</h2>
+          <p class="mt-2 text-slate-700">Clients commonly report relaxation, better sleep, reduced stress, and improved focus within the first 1–3 sessions.</p>
+          <div class="mt-6 grid grid-cols-2 gap-3 sm:max-w-md">
+            <div class="rounded-2xl border bg-emerald-50 p-4 text-center shadow-sm">
+              <div class="text-2xl font-extrabold">72%</div>
+              <div class="text-xs text-slate-700">sleep improved</div>
+            </div>
+            <div class="rounded-2xl border bg-emerald-50 p-4 text-center shadow-sm">
+              <div class="text-2xl font-extrabold">68%</div>
+              <div class="text-xs text-slate-700">stress reduced</div>
+            </div>
+            <div class="rounded-2xl border bg-emerald-50 p-4 text-center shadow-sm">
+              <div class="text-2xl font-extrabold">61%</div>
+              <div class="text-xs text-slate-700">pain eased</div>
+            </div>
+            <div class="rounded-2xl border bg-emerald-50 p-4 text-center shadow-sm">
+              <div class="text-2xl font-extrabold">75%</div>
+              <div class="text-xs text-slate-700">more focus</div>
+            </div>
+          </div>
+          <div class="mt-6 rounded-2xl border p-4 shadow-sm">
+            <p class="text-sm italic text-slate-800">“Warm, calm space and very professional approach. My sleep improved in two sessions.”</p>
+            <p class="mt-2 text-xs text-slate-500">— Client feedback</p>
+          </div>
+        </div>
+        <div class="space-y-3">
+          <div class="aspect-[16/9] overflow-hidden rounded-3xl border">
+            <img src="/images/before-after-1.webp" alt="Relaxation and sleep improvement" loading="lazy" class="h-full w-full object-cover" />
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <img src="/images/space-1.webp" alt="Clinic ambience" loading="lazy" class="h-36 w-full rounded-2xl border object-cover"/>
+            <img src="/images/space-2.webp" alt="Therapy area" loading="lazy" class="h-36 w-full rounded-2xl border object-cover"/>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Conditions -->
+  <section id="conditions" class="bg-emerald-50">
+    <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h2 class="text-2xl font-extrabold sm:text-3xl">Conditions We Help</h2>
+        <p class="mt-2 text-slate-700">Support for adults and teenagers. Preventive wellness plans also available.</p>
+      </div>
+      <div class="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+        <div class="rounded-2xl border bg-white p-4 font-medium text-slate-800 shadow-sm">Relationship balance</div>
+        <div class="rounded-2xl border bg-white p-4 font-medium text-slate-800 shadow-sm">Anxiety & stress</div>
+        <div class="rounded-2xl border bg-white p-4 font-medium text-slate-800 shadow-sm">Sleep issues</div>
+        <div class="rounded-2xl border bg-white p-4 font-medium text-slate-800 shadow-sm">Learning focus</div>
+        <div class="rounded-2xl border bg-white p-4 font-medium text-slate-800 shadow-sm">Gall bladder stone</div>
+        <div class="rounded-2xl border bg-white p-4 font-medium text-slate-800 shadow-sm">Kidney stone</div>
+        <div class="rounded-2xl border bg-white p-4 font-medium text-slate-800 shadow-sm">Anger management</div>
+        <div class="rounded-2xl border bg-white p-4 font-medium text-slate-800 shadow-sm">Emotional regulation</div>
+        <div class="rounded-2xl border bg-white p-4 font-medium text-slate-800 shadow-sm">Phobias</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Approach + Focus Areas -->
+  <section id="about" class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+    <div class="grid items-start gap-10 md:grid-cols-2">
+      <div>
+        <h2 class="text-2xl font-extrabold sm:text-3xl">How we work</h2>
+        <p class="mt-2 text-slate-700">Simple, transparent, and personalized from day one.</p>
+        <ol class="mt-5 space-y-4 text-slate-700">
+          <li class="flex gap-3">
+            <span class="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 font-bold text-white">1</span>
+            <div>
+              <p class="font-semibold">Consult &amp; assess</p>
+              <p class="text-sm">Discuss concerns, lifestyle &amp; medical history. Energy scan and pulse observation if required.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 font-bold text-white">2</span>
+            <div>
+              <p class="font-semibold">Personalized plan</p>
+              <p class="text-sm">Blend of Chakra Healing, Reflexology, Acupuncture, and easy home practices.</p>
+            </div>
+          </li>
+          <li class="flex gap-3">
+            <span class="flex h-8 w-8 items-center justify-center rounded-full bg-emerald-600 font-bold text-white">3</span>
+            <div>
+              <p class="font-semibold">Progress &amp; support</p>
+              <p class="text-sm">Track relief, sleep, mood and energy. Adjust as your body responds.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <aside class="rounded-3xl border bg-gradient-to-br from-white to-emerald-50 p-6 shadow-sm">
+        <h3 class="text-lg font-bold">Main focus areas</h3>
+        <ul class="mt-3 grid gap-3 text-sm sm:grid-cols-2">
+          <li class="rounded-xl border bg-white p-3 shadow-sm">Physical</li>
+          <li class="rounded-xl border bg-white p-3 shadow-sm">Mental</li>
+          <li class="rounded-xl border bg-white p-3 shadow-sm">Emotional</li>
+          <li class="rounded-xl border bg-white p-3 shadow-sm">Spiritual</li>
+          <li class="rounded-xl border bg-white p-3 shadow-sm">Social wellbeing</li>
+        </ul>
+        <p class="mt-5 text-sm text-slate-700">Our goal is holistic balance so you feel healthy, calm, and in control.</p>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Practitioner & Clinic -->
+  <section class="bg-slate-50">
+    <div class="mx-auto grid max-w-7xl items-start gap-10 px-4 py-14 sm:px-6 lg:px-8 md:grid-cols-3">
+      <div class="md:col-span-2">
+        <h2 class="text-2xl font-extrabold sm:text-3xl">About the Practitioner</h2>
+        <p class="mt-2 text-slate-700">Care led by an experienced consultant with multidisciplinary training.</p>
+        <ul class="mt-5 grid gap-3 text-sm text-slate-800 md:grid-cols-2">
+          <li class="rounded-xl border bg-white p-3 shadow-sm">AYUSH Certified Yoga Teacher</li>
+          <li class="rounded-xl border bg-white p-3 shadow-sm">Holistic Health Consultant</li>
+          <li class="rounded-xl border bg-white p-3 shadow-sm">Acupuncturist</li>
+          <li class="rounded-xl border bg-white p-3 shadow-sm">Foot Reflexology Practitioner</li>
+          <li class="rounded-xl border bg-white p-3 shadow-sm">Training in Chakra &amp; Energy Healing</li>
+          <li class="rounded-xl border bg-white p-3 shadow-sm">Lifestyle, nutrition and routine support</li>
+        </ul>
+      </div>
+      <aside class="rounded-3xl border bg-white p-6 shadow-sm">
+        <h3 class="font-bold">Clinic Info</h3>
+        <div class="mt-2 text-sm text-slate-700">
+          <p class="font-medium">Holistic Cell Wellbeing</p>
+          <p id="clinicAddress2">Market and Apollo Pharmacy, 87/35, Vadivelu Mudali St, near Vellaiyan Vegetables, Kakkanji Colony, Chinnaiyan Colony, Perambur, Chennai, Tamil Nadu 600011</p>
+          <p class="mt-2">Phone: <a class="font-semibold text-emerald-700" href="tel:+919840055744">098400 55744</a></p>
+        </div>
+        <a href="#contact" class="mt-4 inline-block rounded-xl bg-emerald-600 px-4 py-2 font-semibold text-white hover:bg-emerald-700">Book Appointment</a>
+      </aside>
+    </div>
+  </section>
+
+  <!-- Meet the Doctor (place this above the Footer) -->
+<section id="doctor" class="bg-white">
+  <div class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+    <div class="mb-6 max-w-3xl">
+      <h2 class="text-2xl font-extrabold sm:text-3xl">Meet the Doctor</h2>
+      <p class="mt-2 text-slate-700">Compassionate, evidence-informed care led by an experienced holistic practitioner.</p>
+    </div>
+
+    <div class="grid items-center gap-8 rounded-3xl border bg-white p-6 shadow-sm md:grid-cols-3">
+      <!-- Photo -->
+      <div class="order-1 md:order-none">
+        <div class="aspect-[4/5] overflow-hidden rounded-2xl border bg-slate-100">
+          <!-- Replace with your actual image or external link -->
+          <img
+            src="/images/doctor.png"
+            alt="Doctor portrait"
+            loading="lazy"
+            class="h-full w-full object-cover"
+          />
+        </div>
+        <p class="mt-2 text-xs text-slate-500"></p>
+      </div>
+
+      <!-- Bio -->
+      <div class="md:col-span-2">
+        <div class="flex items-center gap-2">
+          <i data-lucide="user-round" class="h-5 w-5 text-emerald-700"></i>
+          <p class="text-sm font-medium text-emerald-700">Holistic Cell Wellbeing</p>
+        </div>
+        <h3 class="mt-2 text-2xl font-bold">Dr. Elancheliyan</h3>
+        <p class="text-sm text-slate-600">Holistic Health Consultant • AYUSH Certified Yoga Teacher • Acupuncturist</p>
+
+        <div class="mt-4 grid gap-3 text-sm text-slate-800 sm:grid-cols-2">
+          <div class="flex items-start gap-2 rounded-xl border bg-emerald-50 p-3">
+            <i data-lucide="shield-check" class="mt-0.5 h-4 w-4 text-emerald-700"></i>
+            <div>
+              <p class="font-semibold">Evidence-informed Practice</p>
+              <p class="text-slate-600">Personalized protocols grounded in traditional wisdom and modern research.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-2 rounded-xl border bg-emerald-50 p-3">
+            <i data-lucide="heart-pulse" class="mt-0.5 h-4 w-4 text-emerald-700"></i>
+            <div>
+              <p class="font-semibold">Whole-Person Approach</p>
+              <p class="text-slate-600">Physical, mental, emotional, spiritual and social wellbeing.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-2 rounded-xl border bg-emerald-50 p-3">
+            <i data-lucide="graduation-cap" class="mt-0.5 h-4 w-4 text-emerald-700"></i>
+            <div>
+              <p class="font-semibold">Multidisciplinary Training</p>
+              <p class="text-slate-600">Yoga therapy, acupuncture, reflexology, energy balancing.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-2 rounded-xl border bg-emerald-50 p-3">
+            <i data-lucide="smile" class="mt-0.5 h-4 w-4 text-emerald-700"></i>
+            <div>
+              <p class="font-semibold">Patient-Centric Care</p>
+              <p class="text-slate-600">Clear communication, simple home practices, measurable progress.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+          <a href="#contact" class="w-full rounded-2xl bg-emerald-600 px-5 py-3 text-center font-semibold text-white shadow hover:bg-emerald-700 sm:w-auto">
+            Book with Dr. Elancheliyan
+          </a>
+          <a href="tel:+919840055744" class="w-full rounded-2xl border border-slate-300 px-5 py-3 text-center font-semibold text-slate-800 hover:bg-slate-50 sm:w-auto">
+            Call: 098400 55744
+          </a>
+        </div>
+
+        <!-- Mini credentials list -->
+        <ul class="mt-6 grid gap-2 text-sm text-slate-700 sm:grid-cols-2">
+          <li class="flex items-center gap-2"><i data-lucide="check" class="h-4 w-4 text-emerald-700"></i> AYUSH Certified Yoga Teacher</li>
+          <li class="flex items-center gap-2"><i data-lucide="check" class="h-4 w-4 text-emerald-700"></i> Licensed Acupuncture Practitioner</li>
+          <li class="flex items-center gap-2"><i data-lucide="check" class="h-4 w-4 text-emerald-700"></i> Foot Reflexology Practitioner</li>
+          <li class="flex items-center gap-2"><i data-lucide="check" class="h-4 w-4 text-emerald-700"></i> Holistic Nutrition & Lifestyle Coach</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- FAQs -->
+  <section id="faqs" class="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
+    <div class="max-w-3xl">
+      <h2 class="text-2xl font-extrabold sm:text-3xl">Frequently Asked Questions</h2>
+      <div class="mt-6 divide-y overflow-hidden rounded-2xl border">
+        <!-- FAQ 1 -->
+        <div class="group">
+          <button class="faq-toggle flex w-full items-center justify-between px-4 py-4 text-left font-semibold">
+            How many sessions will I need?
+            <i data-lucide="chevron-down" class="ml-3 h-5 w-5 transition"></i>
+          </button>
+          <div class="faq-body max-h-0 overflow-hidden px-4 pb-0 text-sm text-slate-700">
+            It varies by condition. Relief can begin in 1–3 sessions. Chronic issues respond best to a short, personalized program planned after your consultation.
+          </div>
+        </div>
+        <!-- FAQ 2 -->
+        <div class="group">
+          <button class="faq-toggle flex w-full items-center justify-between px-4 py-4 text-left font-semibold">
+            Is acupuncture painful?
+            <i data-lucide="chevron-down" class="ml-3 h-5 w-5 transition"></i>
+          </button>
+          <div class="faq-body max-h-0 overflow-hidden px-4 pb-0 text-sm text-slate-700">
+            We use fine, sterile needles with gentle techniques. Most clients feel relaxed. If preferred, we can switch to needle-free options.
+          </div>
+        </div>
+        <!-- FAQ 3 -->
+        <div class="group">
+          <button class="faq-toggle flex w-full items-center justify-between px-4 py-4 text-left font-semibold">
+            Can therapies be combined?
+            <i data-lucide="chevron-down" class="ml-3 h-5 w-5 transition"></i>
+          </button>
+          <div class="faq-body max-h-0 overflow-hidden px-4 pb-0 text-sm text-slate-700">
+            Yes. Your plan may blend Chakra Healing, Reflexology, Acupuncture, and simple home practices to support results.
+          </div>
+        </div>
+        <!-- FAQ 4 -->
+        <div class="group">
+          <button class="faq-toggle flex w-full items-center justify-between px-4 py-4 text-left font-semibold">
+            Do you help with anxiety, sleep, and emotional balance?
+            <i data-lucide="chevron-down" class="ml-3 h-5 w-5 transition"></i>
+          </button>
+          <div class="faq-body max-h-0 overflow-hidden px-4 pb-0 text-sm text-slate-700">
+            Yes. We work on nervous system regulation and energy balance. Clients often report a calmer mind, better sleep, and improved focus.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="bg-emerald-50">
+    <div class="mx-auto grid max-w-7xl items-start gap-10 px-4 py-14 sm:px-6 lg:px-8 md:grid-cols-2">
+      <div>
+        <h2 class="text-2xl font-extrabold sm:text-3xl">Book an Appointment</h2>
+        <p class="mt-2 text-slate-700">Call us or send a message. We will confirm your slot by phone.</p>
+        <form class="mt-6 grid grid-cols-1 gap-4" onsubmit="return false;">
+          <input class="w-full rounded-xl border p-3" placeholder="Full Name" aria-label="Full Name" />
+          <input class="w-full rounded-xl border p-3" placeholder="Phone" aria-label="Phone" />
+          <input class="w-full rounded-xl border p-3" placeholder="Email (optional)" aria-label="Email" />
+          <textarea class="min-h-[120px] w-full rounded-xl border p-3" placeholder="What would you like help with?" aria-label="Message"></textarea>
+          <button type="button" class="w-full rounded-2xl bg-emerald-600 px-5 py-3 font-semibold text-white hover:bg-emerald-700 sm:w-auto">Send Request</button>
+        </form>
+        <p class="mt-4 text-sm text-slate-600">For faster booking call <a class="font-semibold text-emerald-700" href="tel:+919840055744">098400 55744</a> or message us on WhatsApp.</p>
+        <div class="mt-3 flex gap-2">
+          <a href="tel:+919840055744" class="inline-flex items-center gap-2 rounded-xl border bg-white px-4 py-2 text-sm font-semibold shadow-sm hover:bg-slate-50"><i data-lucide="phone" class="h-4 w-4"></i>Call</a>
+          <a href="https://wa.me/919840055744" class="inline-flex items-center gap-2 rounded-xl border bg-white px-4 py-2 text-sm font-semibold shadow-sm hover:bg-slate-50"><i data-lucide="message-circle" class="h-4 w-4"></i>WhatsApp</a>
+        </div>
+      </div>
+      <div class="rounded-3xl border bg-white p-6 shadow-sm">
+        <h3 class="font-bold">Visit the Clinic</h3>
+        <p class="mt-2 text-sm text-slate-700">Market and Apollo Pharmacy, 87/35, Vadivelu Mudali St, near Vellaiyan Vegetables, Kakkanji Colony, Chinnaiyan Colony, Perambur, Chennai, Tamil Nadu 600011</p>
+        <div class="mt-4 aspect-video w-full overflow-hidden rounded-2xl border">
+          <iframe
+            title="Clinic Map"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="h-full w-full"
+            src="https://www.google.com/maps?q=Market%20and%20Apollo%20Pharmacy%2C%2087%2F35%2C%20Vadivelu%20Mudali%20St%2C%20near%20Vellaiyan%20Vegetables%2C%20Kakkanji%20Colony%2C%20Chinnaiyan%20Colony%2C%20Perambur%2C%20Chennai%2C%20Tamil%20Nadu%20600011&output=embed"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t">
+    <div class="mx-auto grid max-w-7xl gap-8 px-4 py-10 text-sm sm:grid-cols-2 lg:grid-cols-4 sm:px-6 lg:px-8">
+      <div>
+        <p class="font-bold">Holistic Cell Wellbeing</p>
+        <p class="mt-2 text-slate-600">Personalized care for balance and relief. Appointments by prior booking.</p>
+      </div>
+      <div>
+        <p class="font-bold">Quick Links</p>
+        <ul class="mt-2 space-y-2">
+          <li><a href="#services" class="hover:text-emerald-700">Services</a></li>
+          <li><a href="#results" class="hover:text-emerald-700">Results</a></li>
+          <li><a href="#conditions" class="hover:text-emerald-700">Conditions</a></li>
+          <li><a href="#about" class="hover:text-emerald-700">About</a></li>
+          <li><a href="#faqs" class="hover:text-emerald-700">FAQs</a></li>
+          <li><a href="#contact" class="hover:text-emerald-700">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <p class="font-bold">Contact</p>
+        <p class="mt-2">Phone: <a href="tel:+919840055744" class="font-semibold text-emerald-700">098400 55744</a></p>
+        <p class="mt-2">Perambur, Chennai 600011</p>
+      </div>
+      <div>
+        <p class="font-bold">Hours</p>
+        <p class="mt-2 text-slate-600">By appointment. Call for availability.</p>
+      </div>
+    </div>
+    <div class="pb-20 text-center text-xs text-slate-500 md:pb-8">© <span id="year"></span> Holistic Cell Wellbeing</div>
+  </footer>
+
+  <!-- Mobile sticky action bar -->
+  <div class="fixed inset-x-0 bottom-0 z-40 flex items-center justify-between gap-2 border-t bg-white px-4 py-2 shadow md:hidden">
+    <a href="tel:+919840055744" class="flex flex-1 items-center justify-center gap-2 rounded-xl border bg-white px-3 py-2 text-sm font-semibold shadow-sm"><i data-lucide="phone" class="h-4 w-4"></i> Call</a>
+    <a href="#contact" class="flex flex-[1.4] items-center justify-center gap-2 rounded-xl bg-emerald-600 px-3 py-2 text-sm font-semibold text-white shadow"><i data-lucide="calendar-days" class="h-4 w-4"></i> Book</a>
+    <a href="https://wa.me/919840055744" class="flex flex-1 items-center justify-center gap-2 rounded-xl border bg-white px-3 py-2 text-sm font-semibold shadow-sm"><i data-lucide="message-circle" class="h-4 w-4"></i> Chat</a>
+  </div>
+
+  <!-- LocalBusiness JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "HealthAndBeautyBusiness",
+    "name": "Holistic Cell Wellbeing",
+    "telephone": "+91 98400 55744",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Market and Apollo Pharmacy, 87/35, Vadivelu Mudali St, near Vellaiyan Vegetables, Kakkanji Colony, Chinnaiyan Colony",
+      "addressLocality": "Perambur",
+      "addressRegion": "Tamil Nadu",
+      "postalCode": "600011",
+      "addressCountry": "IN"
+    },
+    "url": "https://example.com",
+    "sameAs": [],
+    "makesOffer": [
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Aura & Chakra Healing" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Foot Reflexology" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Acupuncture" } },
+      { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Holistic Health Consultation" } }
+    ]
+  }
+  </script>
+
+  <!-- Scripts -->
+  <script>
+    // Initialize icons
+    document.addEventListener('DOMContentLoaded', () => {
+      if (window.lucide) window.lucide.createIcons();
+    });
+
+    // Year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // Drawer handlers
+    const drawerOverlay = document.getElementById('drawerOverlay');
+    const openDrawerBtn = document.getElementById('openDrawerBtn');
+    const closeDrawerBtn = document.getElementById('closeDrawerBtn');
+    const closeDrawerOverlay = document.getElementById('closeDrawerOverlay');
+    const mobileCloseLinks = () => document.querySelectorAll('.mobile-close');
+
+    function openDrawer() {
+      drawerOverlay.classList.remove('hidden');
+      document.body.style.overflow = 'hidden';
+      if (window.lucide) window.lucide.createIcons();
+    }
+    function closeDrawer() {
+      drawerOverlay.classList.add('hidden');
+      document.body.style.overflow = '';
+    }
+
+    openDrawerBtn.addEventListener('click', openDrawer);
+    closeDrawerBtn.addEventListener('click', closeDrawer);
+    closeDrawerOverlay.addEventListener('click', closeDrawer);
+    document.addEventListener('click', (e) => {
+      if (e.target.closest('.mobile-close')) closeDrawer();
+    });
+
+    // FAQ accordion
+    const faqToggles = document.querySelectorAll('.faq-toggle');
+    faqToggles.forEach((btn) => {
+      btn.addEventListener('click', () => {
+        const body = btn.parentElement.nextElementSibling;
+        const icon = btn.querySelector('[data-lucide="chevron-down"]');
+
+        const isOpen = body.style.maxHeight && body.style.maxHeight !== '0px';
+        // Close all
+        document.querySelectorAll('.faq-body').forEach(el => {
+          el.style.maxHeight = '0px';
+          el.style.paddingBottom = '0px';
+        });
+        document.querySelectorAll('.faq-toggle [data-lucide="chevron-down"]').forEach(i => {
+          i.style.transform = 'rotate(0deg)';
+          i.classList.remove('text-emerald-700');
+        });
+
+        if (!isOpen) {
+          body.style.maxHeight = body.scrollHeight + 'px';
+          body.style.paddingBottom = '1rem';
+          icon.style.transform = 'rotate(180deg)';
+          icon.classList.add('text-emerald-700');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
